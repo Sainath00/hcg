@@ -21,7 +21,7 @@ There are 7 valid moves in this game. They depict 0,1,2,3,4,5,6 runs respectivel
 
 In this version of Hand Cricket, the first player is a real person and the second player is the computer. The player throws one of these moves in front of the webcam as per their choice which is converted into its respective number between 0 and 6, and simultaneously the computer selects a number between 0 and 6 randomly. If both(player and computer) throw the same number, the batsman is out!.
 
-In the first innings, the person always bats first and computer bowls first and unless the computer takes the wicket of the person, the score of the person keeps on adding as per their move. When the computer takes the wicket of the person, the computer starts batting and adding up its score and the person has to take the wicket of the computer before they beat the persons score.
+In the first innings, the person always bats first and computer bowls first and unless the computer takes the wicket of the person, the score of the person keeps on adding as per their move. When the computer takes the wicket of the person, the computer starts batting and adding up its score and the person has to take the wicket of the computer before they beat the person's score.
 
 ## **Interface**
 
@@ -51,6 +51,10 @@ When the computer takes the wicket of the player, a out screen is displayed. Thi
 
 This is the end screen. This screen displays the final winner and the final scores of both players. (Here we can see that the player made a score of 18 in the batting stage and got out, and then when the computer was batting, the  player managed to take computer's wicket at a score of 12. And hence the Player won.)
 
+## **Code**
+
+1) HandTrackingModule.py is a helper module that does all the landmark detection, and landmark drawing on the hands.
+2) HandCricket.py is the main module that calls HandTrackingModule. It handles all the move set, turns, opencv window and game details logic required for hand cricket.
 
 ## **Summary**
 1) Mediapipe is a very powerful open source library created by Google. 
