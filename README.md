@@ -53,7 +53,7 @@ This is the end screen. This screen displays the final winner and the final scor
 
 ## **Code**
 
-1) HandTrackingModule.py is a helper module that does all the landmark detection, and landmark drawing on the hands.
+1) HandTrackingModule.py is a helper module that does all the landmark detection, and landmark drawing on the hands.(Since the screen only updates every 2 seconds while in the game, this module can be ran to see the real FPS and accuracy of hand detection in a live webcam feed.
 2) HandCricket.py is the main module that calls HandTrackingModule. It handles all the move set, turns, opencv window and game details logic required for hand cricket.
 
 ## **Summary**
