@@ -10,6 +10,7 @@
 
 ## **Project Info**
 
+### Game Info
 Hand Cricket is a game that many children used to play in their school days. In this game two players show moves on their respective fingers. If the moves are equal, the batsman is declared out. Else, the move of the batsman is added to the total runs of the batting team. Once the first player is out the second player starts batting and their goal is to beat the score of first player.(This game is explained in this instructibles.com article https://www.instructables.com/How-to-Play-Hand-Cricket/)
 
 ## **Move Set**
@@ -43,7 +44,7 @@ Note:
 
 ![alt text](https://github.com/wasdac9/hand-cricket/blob/main/out_screen.PNG?raw=true)
 
-When the computer takes the wicket of the player, a out screen is displayed. This screen displays some details like the score computer need to win and the changed state of the player to "Bowling". (Here the player's score is 18, and the computer needs to beat this score to win.)
+When the computer takes the wicket of the player, a out screen is displayed. This screen displays some details like the score computer needs to win and the changed state of the player to "Bowling". (Here the player's score is 18, and the computer needs to beat this score to win.)
 
 ### **End Screen**
 
@@ -53,7 +54,7 @@ This is the end screen. This screen displays the final winner and the final scor
 
 ## **Code**
 
-1) HandTrackingModule.py is a helper module that does all the landmark detection, and landmark drawing on the hands.(Since the screen only updates every 2 seconds while in the game, this module can be ran to see the real FPS and accuracy of hand detection in a live webcam feed.
+1) HandTrackingModule.py is a helper module that does all the landmark detection, and landmark drawing on the hands.(Since the screen only updates every 2 seconds while in the game, this module can be ran to see the real FPS and accuracy of hand detection in a live webcam feed.)
 2) HandCricket.py is the main module that calls HandTrackingModule. It handles all the move set, turns, opencv window and game details logic required for hand cricket.
 
 ## **Summary**
